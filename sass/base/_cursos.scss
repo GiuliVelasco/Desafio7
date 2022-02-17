@@ -1,0 +1,10 @@
+@import"../components/mixins";
+
+.container{
+    .row{
+        h1{
+            color: $color-terciario;
+            @include encabezados;
+        }
+    }
+}

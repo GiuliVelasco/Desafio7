@@ -1,0 +1,47 @@
+@import "../components/variables";
+
+//Estilos del header
+header{
+    .fondoheader{
+        background-image: url(../img/portada2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 240px;
+        .container-fluid{
+            a{
+                .logo{
+                    background-color: $color-ppal;
+                    @extend %bordes-icono;
+                }
+            }
+        }    
+    }
+}
+//Estilos del menú navegación
+.fondonav{
+    background-color: $color-secundario;
+    .nav{
+        li{
+            .navcolor{
+                color: $color-ppal;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                text-transform: uppercase;
+                &:hover{
+                    color: $color-ppal;
+                }
+            }
+            .hoja-activa{
+                color: black;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+//Estilos del footer
+.fondofooter{
+    background-color: $color-ppal;
+}
